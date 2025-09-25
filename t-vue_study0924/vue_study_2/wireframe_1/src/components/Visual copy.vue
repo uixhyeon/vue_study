@@ -11,11 +11,15 @@
         clickable: true,
       }"
       :navigation="true"
-      :loop="true"
-    >
-      <swiper-slide v-for="(slide, i) in slides" :key="i">
-        <!-- <img src="https://picsum.photos/id/1011/1200/400" alt="slide" /> -->
-        <img :src="slide.img" :alt="`slide${i + 1}`" />
+      :loop="true">
+      <swiper-slide>
+        <img src="https://picsum.photos/id/1011/1200/400" alt="slide" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="https://picsum.photos/id/1012/1200/400" alt="slide" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="https://picsum.photos/id/1013/1200/400" alt="slide" />
       </swiper-slide>
     </swiper>
   </section>
@@ -30,13 +34,6 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-
-//??
-const slides = [
-  { img: "https://picsum.photos/id/1011/1200/400" },
-  { img: "https://picsum.photos/id/1012/1200/400" },
-  { img: "https://picsum.photos/id/1013/1200/400" },
-];
 </script>
 <style scoped>
 .visual img {
