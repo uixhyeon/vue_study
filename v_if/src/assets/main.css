@@ -1,0 +1,19 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box ;
+list-style: none;
+
+}
+#app{
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+
+}
+h2{
+  display: inline-block;
+  background-color: rgb(122, 190, 32);
+  color: #ffffff;
+}
